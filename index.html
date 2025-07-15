@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Content Writer</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="main-content">
+    <!-- Header -->
+    <header>
+      <h1>🧠 AI Content Writer</h1>
+      <div class="tabs">
+        <a href="#">Home</a>
+        <a href="#">History</a>
+        <a href="#">Help</a>
+      </div>
+    </header>
+
+    <!-- Horizontal Menu -->
+    <nav class="horizontal-menu">
+      <a href="#">Dashboard</a>
+      <a href="#">Generator</a>
+      <a href="#">Saved</a>
+      <a href="#">Templates</a>
+      <a href="#">Settings</a>
+    </nav>
+
+    <!-- Input Section -->
+    <div class="input-section">
+      <input type="text" id="input-topic" placeholder="Enter topic or keywords" />
+      <select id="tone">
+        <option value="Friendly">Friendly</option>
+        <option value="Formal">Formal</option>
+        <option value="Persuasive">Persuasive</option>
+        <option value="Witty">Witty</option>
+        <option value="Professional">Professional</option>
+      </select>
+      <select id="time-limit">
+        <option value="5 minutes">5 minutes</option>
+        <option value="10 minutes">10 minutes</option>
+        <option value="15 minutes">15 minutes</option>
+      </select>
+      <br><br>
+      <button id="generate-btn">Generate</button>
+      <button id="reset-btn">Reset</button>
+      <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+    </div>
+
+    <!-- Output Section -->
+    <div class="output-section">
+      <h2>Generated Content</h2>
+      <textarea id="output" placeholder="Your content will appear here..."></textarea>
+      <br>
+      <button>Edit</button>
+      <button>Save</button>
+      <button>Download</button>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2025 • Made by Jyotsna | HTML + CSS + JS | Powered by Ollama</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
